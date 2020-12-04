@@ -23,9 +23,27 @@ body {
     background-position: bottom center;
     background-repeat: no-repeat;
     position: absolute;
-    left: 0;
-    transition: all 0.5s;
+    left: -200px;
+    transition: all 1s;
 }
+    .car[data-model="bmw"] {
+        background-image: url(../img/bmw.png);
+    }
+    .car[data-model="lambo"] {
+        background-image: url(../img/lambo.png);
+    }
+    .car[data-model="ferrari"] {
+        background-image: url(../img/ferrari.png);
+    }
+    .car[data-model="kia"] {
+        background-image: url(../img/kia.png);
+    }
+    .car[data-model="ford"] {
+        background-image: url(../img/ford.png);
+    }
+    .car[data-model="tesla"] {
+        background-image: url(../img/tesla.png);
+    }
     .car.car-1 {
         top: 40vh;
     }
@@ -50,7 +68,7 @@ body {
     color: #FFF;
 }
 .line.finish {
-    left: 98%;
+    left: calc(100% - 10px);
     border-color: red;
     color: red;
 }
