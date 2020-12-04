@@ -44,12 +44,33 @@ body {
     .car[data-model="tesla"] {
         background-image: url(../img/tesla.png);
     }
+    .car::before {
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        content: '';
+        position: absolute;
+        top: -20px;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: #FFFC;
+        color: #000;
+        font-size: 20px;
+        line-height: 40px;
+        text-align: center;
+    }
     .car.car-1 {
         top: 40vh;
     }
+        .car.car-1::before {
+            content: 'A';
+        }
     .car.car-2 {
         top: 70vh;
     }
+        .car.car-2::before {
+            content: 'L';
+        }
 .line {
     display: inline-block;
     width: 50vh;
