@@ -13,6 +13,7 @@ body {
     background-image: url(../img/background.png);
     background-repeat: repeat-x;
     background-size: contain;
+    overflow: hidden;
 }
 .car {
     display: inline-block;
